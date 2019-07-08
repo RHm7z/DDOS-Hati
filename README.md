@@ -1,11 +1,9 @@
-# DDOS-Hati
-#Aink Noob Mastah 
+===============================
+        # DDOS-Hati
+===============================
+Coded By RHm7z
+-
 
-#Command to install
-
-pkg install python2
-cd DDOS-Hati
-python2 hatiyangpatah.py
-
-#Gunakan dengan bijak
-#©Copyright by RHm7z
+©Copyright by RHm7z
+-
+Running On Python 2.7
